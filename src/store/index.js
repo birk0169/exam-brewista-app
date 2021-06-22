@@ -36,40 +36,188 @@ export default createStore({
         name: 'French Press',
         icon: 'french',
         image: 'AearoPress-Brew.jpg',
-        coffeAmount: 33,
+        coffeeAmount: 33,
         waterAmount: 500,
         grind: 'Course',
-        time: '4 min'
+        time: '4 min',
+        guide: [
+          {
+            id: 0,
+            step: 1,
+            image: 'wlaberec.png',
+            title: 'Planning out your coffee',
+            description: 'To make good coffee you need good ingredients, start with high quality beans with the flavour you want. We recommend 60g/l The more you brew the coarser you need to grind the coffee'
+          },
+          {
+            id: 1,
+            step: 2,
+            image: 'ncl4omsr.png',
+            title: 'Measure and grind beans',
+            description: 'Remember that the burrs on a grinder changes over time. You will need to test out some brews to find your perfect setting. Normally if the coffee tastes bitter amd dry, grind coarser, if weak and watery, grind finer. There is usually no need to adjust the coffee amount, simply adjust tand test different grind settings.'
+          },
+          {
+            id: 2,
+            step: 3,
+            image: 'd7xp64x6.png',
+            title: 'Filter',
+            description: 'Remember that the burrs on a grinder changes over time. You will need to test out some brews to find your perfect setting. Normally if the coffee tastes bitter amd dry, grind coarser, if weak and watery, grind finer. There is usually no need to adjust the coffee amount, simply adjust tand test different grind settings.'
+          },
+          {
+            id: 3,
+            step: 4,
+            image: '538gm3mc.png',
+            title: 'Planning out your coffee',
+            description: 'To make good coffee you need good ingredients, start with high quality beans with the flavour you want. We recommend 60g/l The more you brew the coarser you need to grind the coffee'
+          },
+          {
+            id: 4,
+            step: 5,
+            image: '538gm3mc.png',
+            title: 'Enjoy',
+            description: 'Let your coffee cool down for 5 minutes for the most flavor. If it gets to cold you can heat it back up in a microwave.'
+          },
+        ]
       },
       {
         id: 1,
         name: 'Cold Infusion',
         icon: 'infusion',
         image: 'ColdBrew.jpg',
-        coffeAmount: 40,
+        coffeeAmount: 40,
         waterAmount: 200,
         grind: 'Course',
-        time: '2 timer'
+        time: '2 timer',
+        guide: [
+          {
+            id: 0,
+            step: 1,
+            image: 'wlaberec.png',
+            title: 'Planning out your coffee',
+            description: 'To make good coffee you need good ingredients, start with high quality beans with the flavour you want. We recommend 60g/l The more you brew the coarser you need to grind the coffee'
+          },
+          {
+            id: 1,
+            step: 2,
+            image: 'ncl4omsr.png',
+            title: 'Measure and grind beans',
+            description: 'Remember that the burrs on a grinder changes over time. You will need to test out some brews to find your perfect setting. Normally if the coffee tastes bitter amd dry, grind coarser, if weak and watery, grind finer. There is usually no need to adjust the coffee amount, simply adjust tand test different grind settings.'
+          },
+          {
+            id: 2,
+            step: 3,
+            image: 'd7xp64x6.png',
+            title: 'Filter',
+            description: 'Remember that the burrs on a grinder changes over time. You will need to test out some brews to find your perfect setting. Normally if the coffee tastes bitter amd dry, grind coarser, if weak and watery, grind finer. There is usually no need to adjust the coffee amount, simply adjust tand test different grind settings.'
+          },
+          {
+            id: 3,
+            step: 4,
+            image: '538gm3mc.png',
+            title: 'Planning out your coffee',
+            description: 'To make good coffee you need good ingredients, start with high quality beans with the flavour you want. We recommend 60g/l The more you brew the coarser you need to grind the coffee'
+          },
+          {
+            id: 4,
+            step: 5,
+            image: '538gm3mc.png',
+            title: 'Enjoy',
+            description: 'Let your coffee cool down for 5 minutes for the most flavor. If it gets to cold you can heat it back up in a microwave.'
+          },
+        ]
       },
       {
         id: 2,
         name: 'Chemex',
         icon: 'chemex',
         image: 'AearoPress-Brew.jpg',
-        coffeAmount: 16,
+        coffeeAmount: 16,
         waterAmount: 230,
         grind: 'Fine',
-        time: '3 min'
+        time: '3 min',
+        guide: [
+          {
+            id: 0,
+            step: 1,
+            image: 'wlaberec.png',
+            title: 'Planning out your coffee',
+            description: 'To make good coffee you need good ingredients, start with high quality beans with the flavour you want. We recommend 60g/l The more you brew the coarser you need to grind the coffee'
+          },
+          {
+            id: 1,
+            step: 2,
+            image: 'ncl4omsr.png',
+            title: 'Measure and grind beans',
+            description: 'Remember that the burrs on a grinder changes over time. You will need to test out some brews to find your perfect setting. Normally if the coffee tastes bitter amd dry, grind coarser, if weak and watery, grind finer. There is usually no need to adjust the coffee amount, simply adjust tand test different grind settings.'
+          },
+          {
+            id: 2,
+            step: 3,
+            image: 'd7xp64x6.png',
+            title: 'Filter',
+            description: 'Remember that the burrs on a grinder changes over time. You will need to test out some brews to find your perfect setting. Normally if the coffee tastes bitter amd dry, grind coarser, if weak and watery, grind finer. There is usually no need to adjust the coffee amount, simply adjust tand test different grind settings.'
+          },
+          {
+            id: 3,
+            step: 4,
+            image: '538gm3mc.png',
+            title: 'Planning out your coffee',
+            description: 'To make good coffee you need good ingredients, start with high quality beans with the flavour you want. We recommend 60g/l The more you brew the coarser you need to grind the coffee'
+          },
+          {
+            id: 4,
+            step: 5,
+            image: '538gm3mc.png',
+            title: 'Enjoy',
+            description: 'Let your coffee cool down for 5 minutes for the most flavor. If it gets to cold you can heat it back up in a microwave.'
+          },
+        ]
       },
       {
         id: 3,
         name: 'Kalita Wave',
         icon: 'kalita',
         image: 'ColdBrew.jpg',
-        coffeAmount: 16,
+        coffeeAmount: 16,
         waterAmount: 230,
         grind: 'Fine',
-        time: '3 min'
+        time: '3 min',
+        guide: [
+          {
+            id: 0,
+            step: 1,
+            image: 'wlaberec.png',
+            title: 'Planning out your coffee',
+            description: 'To make good coffee you need good ingredients, start with high quality beans with the flavour you want. We recommend 60g/l The more you brew the coarser you need to grind the coffee'
+          },
+          {
+            id: 1,
+            step: 2,
+            image: 'ncl4omsr.png',
+            title: 'Measure and grind beans',
+            description: 'Remember that the burrs on a grinder changes over time. You will need to test out some brews to find your perfect setting. Normally if the coffee tastes bitter amd dry, grind coarser, if weak and watery, grind finer. There is usually no need to adjust the coffee amount, simply adjust tand test different grind settings.'
+          },
+          {
+            id: 2,
+            step: 3,
+            image: 'd7xp64x6.png',
+            title: 'Filter',
+            description: 'Remember that the burrs on a grinder changes over time. You will need to test out some brews to find your perfect setting. Normally if the coffee tastes bitter amd dry, grind coarser, if weak and watery, grind finer. There is usually no need to adjust the coffee amount, simply adjust tand test different grind settings.'
+          },
+          {
+            id: 3,
+            step: 4,
+            image: '538gm3mc.png',
+            title: 'Planning out your coffee',
+            description: 'To make good coffee you need good ingredients, start with high quality beans with the flavour you want. We recommend 60g/l The more you brew the coarser you need to grind the coffee'
+          },
+          {
+            id: 4,
+            step: 5,
+            image: '538gm3mc.png',
+            title: 'Enjoy',
+            description: 'Let your coffee cool down for 5 minutes for the most flavor. If it gets to cold you can heat it back up in a microwave.'
+          },
+        ]
       }
     ],
     combinations: [
@@ -88,8 +236,20 @@ export default createStore({
     ]
   },
   mutations: {
+    addNewCombination(state, payload){
+      state.combinations.unshift(payload);
+    }
   },
   actions: {
+    addNewCombination(context, payload){
+      context.commit('addNewCombination', 
+        {
+          id: 7,
+          coffeeBeanId: payload.beanId,
+          methodId: payload.methodId,
+          favorite: false
+        });
+    }
   },
   getters: {
     getBeans(state){

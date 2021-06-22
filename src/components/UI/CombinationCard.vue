@@ -28,37 +28,25 @@
                 <h4 class="text-sm text-gray-500">{{coffeeBean.name}} from {{coffeeBean.makers}}</h4>
             </div>
         </div>
-        <div class="process py-10 px-6 flex flex-wrap w-full justify-between">
-            <span>
-                <svg>
-                    <use xlink:href="#bean" />
-                </svg>
-                <p>{{process.coffeAmount}}g</p>
-            </span>
-            <span>
-                <svg>
-                    <use xlink:href="#water" />
-                </svg>
-                <p>{{process.waterAmount}}ml</p>
-            </span>
-            <span>
-                <svg>
-                    <use xlink:href="#grind" />
-                </svg>
-                <p>{{process.grind}}</p>
-            </span>
-            <span>
-                <svg>
-                    <use xlink:href="#time" />
-                </svg>
-                <p>{{process.time}}</p>
-            </span>
+        <div class="p-6 w-full">
+            <MethodInfoBar 
+                :coffee="process.coffeeAmount"
+                :water="process.waterAmount"
+                :grind="process.grind"
+                :time="process.time"
+            />
         </div>
     </div>
 </template>
 
 <script>
+
+import MethodInfoBar from './MethodInfoBar.vue';
+
     export default{
+        components: {
+            MethodInfoBar
+        },
         props: {
             process: {
                 required: true

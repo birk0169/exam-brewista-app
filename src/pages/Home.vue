@@ -16,7 +16,7 @@
 <script>
 import CombinationCard from '../components/UI/CombinationCard.vue';
 import TheFooter from '../components/TheFooter.vue';
-import TheHeader from '../components/UI/TheHeader.vue'
+import TheHeader from '../components/UI/TheHeader.vue';
 
 export default {
   name: 'Home',

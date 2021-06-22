@@ -1,37 +1,40 @@
 <template>
-<div :class="mode" class="bean-card mb-12 bg-red-200 rounded-3xl overflow-hidden">
-    <div>
-        <img :src="imagePath"/>
-    </div>
-    <div class="p-6">
-        <h3 class="font-bold pb-4">{{title}}</h3>
-        <p>{{description}}</p>
-        <div class="details-container my-4 flex flex-wrap">
-            <div>
-                <h4 class="uppercase">Process</h4>
-                <p>{{details.process}}</p>
-            </div>
-            <div>
-                <h4 class="uppercase">Roast Profile</h4>
-                <p>{{details.profile}}</p>
-            </div>
-            <div>
-                <h4 class="uppercase">Varieties</h4>
-                <p>{{details.varieties}}</p>
-            </div>
-            <div>
-                <h4 class="uppercase">Country</h4>
-                <p>{{details.country}}</p>
+<router-link :to="'/methods/' + id">
+
+    <div :class="mode" class="bean-card mb-12 bg-red-200 rounded-3xl overflow-hidden">
+        <div>
+            <img :src="imagePath"/>
+        </div>
+        <div class="p-6">
+            <h3 class="font-bold pb-4">{{title}}</h3>
+            <p>{{description}}</p>
+            <div class="details-container my-4 flex flex-wrap">
+                <div>
+                    <h4 class="uppercase">Process</h4>
+                    <p>{{details.process}}</p>
+                </div>
+                <div>
+                    <h4 class="uppercase">Roast Profile</h4>
+                    <p>{{details.profile}}</p>
+                </div>
+                <div>
+                    <h4 class="uppercase">Varieties</h4>
+                    <p>{{details.varieties}}</p>
+                </div>
+                <div>
+                    <h4 class="uppercase">Country</h4>
+                    <p>{{details.country}}</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</router-link>
 </template>
 
 <script>
 
 export default{
-    props: ['id', 'title', 'description', 'mode', 'details', 'process', 'profile', 'varieties', 'country'],
+    props: ['id', 'title', 'description', 'mode', 'details'],
     computed: {
         imagePath(){
             const style = this.mode === 'dark-green' ? 'header-coffeecollective-dark.jpg' :  'header-coffeecollective.jpg';
