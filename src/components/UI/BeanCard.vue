@@ -1,9 +1,8 @@
 <template>
-<router-link :to="'/methods/' + id">
-
-    <div :class="mode" class="bean-card mb-12 bg-red-200 rounded-3xl overflow-hidden">
+<router-link class="md:w-6/12 md:p-2" :to="'/methods/' + id">
+    <div :class="mode" class="bean-card md:h-full mb-12 bg-red-200 rounded-3xl overflow-hidden">
         <div>
-            <img :src="imagePath"/>
+            <img class="w-full" :src="imagePath"/>
         </div>
         <div class="p-6">
             <h3 class="font-bold pb-4">{{title}}</h3>

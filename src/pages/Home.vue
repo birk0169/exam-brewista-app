@@ -7,7 +7,9 @@
         destination="/beans"
         mode="cross" />
       <p class="font-bold my-4 text-gray-600">Previous Brews</p>
-      <CombinationCard v-for="combination in combinations" :key="combination.id" :process="getProcessById(combination.methodId)" :coffeeBean="getBeanById(combination.coffeeBeanId)"/>
+      <div class="sm:flex sm:flex-wrap sm:justify-between">
+        <CombinationCard v-for="combination in combinations" :key="combination.id" :process="getProcessById(combination.methodId)" :coffeeBean="getBeanById(combination.coffeeBeanId)"/>
+      </div>
     </div>
     <TheFooter />
   </div>

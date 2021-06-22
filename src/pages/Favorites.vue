@@ -4,13 +4,15 @@
         title="Favorites"
         destination="/beans"
         mode="cross" />
-      <CombinationCard 
-        v-for="combination in combinations" 
-        :key="combination.id" 
-        :process="getProcessById(combination.methodId)" 
-        :coffeeBean="getBeanById(combination.coffeeBeanId)"
-        :isFavorite="true"
-        />
+      <div class="sm:flex sm:flex-wrap md:justify-between">
+        <CombinationCard 
+          v-for="combination in combinations" 
+          :key="combination.id" 
+          :process="getProcessById(combination.methodId)" 
+          :coffeeBean="getBeanById(combination.coffeeBeanId)"
+          :isFavorite="true"
+          />
+      </div>
     </div>
     <TheFooter/>
 </template>

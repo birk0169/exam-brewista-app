@@ -244,7 +244,7 @@ export default createStore({
     addNewCombination(context, payload){
       context.commit('addNewCombination', 
         {
-          id: 7,
+          id: Math.floor(Math.random() * 100) + 1,
           coffeeBeanId: payload.beanId,
           methodId: payload.methodId,
           favorite: false

@@ -4,13 +4,15 @@
             title="Pick your coffee" 
             destination="/"
             mode="arrow" />
-        <BeanCard v-for="bean in beansList" 
-            :key="bean.id" 
-            :id="bean.id" 
-            :title="bean.name"
-            :description="bean.description"
-            :details="bean.details"
-            :mode="bean.cardMode" />
+        <div class="md:flex md:items-stretch md:flex-wrap md:justify-between">
+            <BeanCard v-for="bean in beansList" 
+                :key="bean.id" 
+                :id="bean.id" 
+                :title="bean.name"
+                :description="bean.description"
+                :details="bean.details"
+                :mode="bean.cardMode" />
+        </div>
     </div>
 </template>
 
