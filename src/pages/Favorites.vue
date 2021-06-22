@@ -1,13 +1,9 @@
 <template>
     <div class="mx-10">
-      <header class="flex justify-between align-top my-20">
-        <h1 class="text-3xl">Favorites</h1>
-        <router-link to="/" class="bg-black rounded-full p-4 ml-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22.015" height="22.015" viewBox="0 0 22.015 22.015">
-            <path class="cross" d="M16.008,6V16.008m0,0V26.015m0-10.008H26.015m-10.008,0H6" transform="translate(-5 -5)"/>
-          </svg>
-        </router-link>
-      </header>
+      <TheHeader 
+        title="Favorites"
+        destination="/beans"
+        mode="cross" />
       <CombinationCard 
         v-for="combination in combinations" 
         :key="combination.id" 
@@ -22,12 +18,15 @@
 <script>
 import CombinationCard from '../components/UI/CombinationCard.vue';
 import TheFooter from '../components/TheFooter.vue'
+import TheHeader from '../components/UI/TheHeader.vue'
+
 
 export default {
   name: 'Home',
   components: {
     CombinationCard,
-    TheFooter
+    TheFooter,
+    TheHeader
   },
   computed: {
     combinations(){

@@ -8,10 +8,12 @@ export default createStore({
         name: 'KIENI ESPRESSO',
         makers: 'Coffee Collective',
         description: 'En frugtbombe af en espresso med aroma af brombær, solbær, stikkelbær og fyldig, olieret afslutning.',
-        process: 'Washed',
-        profile: 'Medium',
-        varieties: 'Castilo, Caturra',
-        country: 'Guatemala',
+        details: {
+          process: 'Washed',
+          profile: 'Medium',
+          varieties: 'Castilo, Caturra',
+          country: 'Guatemala',
+        },
         cardMode: 'dark-green'
       }, 
       {
@@ -19,10 +21,12 @@ export default createStore({
         name: 'KIENI',
         makers: 'Coffee Collective',
         description: 'Saftig syrlighed med intens sødme. Fyldig og læskende med kompleks aroma af solbær, stikkelbær og brombær',
-        process: 'Washed',
-        profile: 'Medium',
-        varieties: 'Castilo, Caturra',
-        country: 'Guatemala',
+        details: {
+          process: 'Washed',
+          profile: 'Medium',
+          varieties: 'Castilo, Caturra',
+          country: 'Guatemala',
+        },
         cardMode: 'beige'
       }
     ],
