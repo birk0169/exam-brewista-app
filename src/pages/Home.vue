@@ -6,6 +6,7 @@
         highligtedTitle="Day for Coffee"
         destination="/beans"
         mode="cross" />
+      <button @click="passDataToDb">Post</button>
       <p class="font-bold my-4 text-gray-600">Previous Brews</p>
       <div class="sm:flex sm:flex-wrap sm:justify-between">
         <CombinationCard v-for="combination in combinations" :key="combination.id" :process="getProcessById(combination.methodId)" :coffeeBean="getBeanById(combination.coffeeBeanId)"/>
@@ -40,6 +41,14 @@ export default {
     getBeanById(id){
       const bean = this.$store.getters.getBeans.filter(b => b.id == id);
       return bean[0];
+    },
+    passDataToDb(){
+      // console.log('click');
+      // this.$store.dispatch('passCombinationToDB', {
+      //     id: 10,
+      //     coffeeBeanId: 1,
+      //     methodId: 1,
+      //     favorite: true});
     }
   }
 }

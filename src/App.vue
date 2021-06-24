@@ -6,6 +6,14 @@
   </router-view>
 </template>
 
+<script>
+export default{
+  created(){
+      this.$store.dispatch('loadDBToState');
+  }
+}
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="mx-10">
       <TheHeader 
         title="Favorites"
@@ -15,6 +16,7 @@
       </div>
     </div>
     <TheFooter/>
+  </div>
 </template>
 
 <script>
